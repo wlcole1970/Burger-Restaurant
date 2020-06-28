@@ -4,7 +4,8 @@
 }
 
 .navbar-brand,
-.menu {
+.menu,
+.location {
 	font-family: 'Monoton', cursive;
 	letter-spacing: 2px;
 }
