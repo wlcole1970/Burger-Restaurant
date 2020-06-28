@@ -3,9 +3,14 @@
 	height: 140px;
 }
 
-.navbar-brand {
+.navbar-brand,
+.menu {
 	font-family: 'Monoton', cursive;
 	letter-spacing: 2px;
+}
+
+main {
+	padding-top: 70px;
 }
 .btn {
 	background: #fa7d09;
@@ -57,3 +62,26 @@ footer a:hover {
 	border-color: #4a3f35;
 	/* box-shadow: 0 0 0 0.2rem rgba(72, 180, 97, .5); */
 }
+
+.menu {
+	text-transform: uppercase;
+}
+
+ul {
+	list-style-type: none;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+hr.vertical {
+	width: 0px;
+	height: 100%;
+	/* or height in PX */
+}
+
+/* .foodDescription {
+	background: cornsilk;
+} */
