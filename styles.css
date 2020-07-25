@@ -1,4 +1,4 @@
-.col-md-4 > img {
+.col-md-4>img {
 	width: 140px;
 	height: 140px;
 }
@@ -13,6 +13,7 @@
 main {
 	padding-top: 70px;
 }
+
 .btn {
 	background: #fa7d09;
 	color: cornsilk;
@@ -28,11 +29,13 @@ main {
 	background-color: #fa7d09;
 	border-color: #fa7d09;
 }
+
 .btn:focus {
 	background-color: #ff4301;
 	background: #ff4301;
 	border-color: #ff4301;
 }
+
 .btn:hover {
 	background: #ff4301;
 }
@@ -48,13 +51,19 @@ footer a {
 footer a:hover {
 	color: #4a3f35;
 }
+
 .container-fluid {
 	background: #4a3f35;
 }
 
 .container {
 	color: #4a3f35;
+
 }
+
+/* .btn-secondary {
+	
+} */
 
 .btn-success.focus,
 .btn-success:focus {
