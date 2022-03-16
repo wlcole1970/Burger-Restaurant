@@ -36,10 +36,15 @@
                         <a href="menu.html" class="nav-link">Menu</a>
                     </li>
                 </ul>
-                <form class="form-inline my-2 my-md-1">
-                    <input type="text" class="form-control mr-sm-2 " placeholder="Search">
-                    <button class="btn my-2" type="submit">Search</button>
-                </form>
+              
+                <div class="col-md-5">
+                    <button type='button' class="btn btn-success" data-toggle="modal" data-target="#modal">
+                        Sign Up Here!
+                    </button>
+                    <button type='button' class="btn btn-success" data-toggle="modal" data-target="#modal">
+                        Login Here
+                    </button>
+                </div>
             </div>
         </nav>
     </header>
@@ -47,8 +52,8 @@
 
     <div class="container py-4">
         <div class="row text-center">
-          <div class="col-md-12 py-2">
-            <img class='' src="images/katy.jpg" alt="restaurant image">
+          <div class="locations col-md-12 py-2">
+            <!-- <img class='' src="images/katy.jpg" alt="restaurant image">
             
             <h3 class="py-3">Katy</h3>
             <p>25660 Nelson Way, Katy, TX 77494</p>
@@ -56,11 +61,12 @@
             <div>
                 <iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/view?zoom=17&center=29.7744%2C-95.8206&key=AIzaSyCyiloYoV303sgisw9hhbmKEfTV2d1oXxM" allowfullscreen></iframe>
                 <hr>
-            </div>
+            </div> -->
+            <hr>
           </div>
 
-          <div class="col-md-12 py-2">
-            <img class='' src="images/woodlands.jpg" alt="restaurant image">
+          <div class="locations col-md-12 py-2">
+            <!-- <img class='' src="images/woodlands.jpg" alt="restaurant image">
             
             <h3 class="py-3">The Woodlands</h3>
             <p>1201 Lake Woodlands Dr., The Woodlands, TX 77380</p>
@@ -68,11 +74,12 @@
             <div>
                 <iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/view?zoom=17&center=30.1641%2C-95.4554&key=AIzaSyCyiloYoV303sgisw9hhbmKEfTV2d1oXxM" allowfullscreen></iframe>
                 <hr>
-            </div>
+            </div> -->
           </div>
 
-          <div class="col-md-12 py-2">
-            <img class='' src="images/midtown.jpg" alt="restaurant image">
+
+          <div class="locations col-md-12 py-2">
+            <!-- <img class='' src="images/midtown.jpg" alt="restaurant image">
             
             <h3 class="py-3">Midtown</h3>
             <p>3511 Main St., Houston, TX 77002</p>
@@ -81,11 +88,11 @@
                 <iframe width="600" height="450" frameborder="0" style="border:0"
 src="https://www.google.com/maps/embed/v1/view?zoom=17&center=29.7392,-95.3785&key=AIzaSyCyiloYoV303sgisw9hhbmKEfTV2d1oXxM" allowfullscreen></iframe>
 <hr>
-            </div>
+            </div> -->
           </div>
-
-          <div class="col-md-12 py-2">
-            <img class='' src="images/uptown.jpg" alt="restaurant image">
+          <hr>
+          <div class="locations col-md-12 py-2">
+            <!-- <img class='' src="images/uptown.jpg" alt="restaurant image">
             
             <h3 class="py-3">Galleria</h3>
             <p>2018 Post Oak Blvd, Houston, TX 77056</p>
@@ -93,7 +100,7 @@ src="https://www.google.com/maps/embed/v1/view?zoom=17&center=29.7392,-95.3785&k
             <div>
                 <iframe width="600" height="450" frameborder="0" style="border:0"
 src="https://www.google.com/maps/embed/v1/view?zoom=17&center=29.7460,-95.4613&key=AIzaSyCyiloYoV303sgisw9hhbmKEfTV2d1oXxM" allowfullscreen></iframe>
-            </div>
+            </div> -->
           </div>
           </div>
         </div>
@@ -102,7 +109,7 @@ src="https://www.google.com/maps/embed/v1/view?zoom=17&center=29.7460,-95.4613&k
 
 <!-- Offers -->
 
-    <div class="container-fluid py-2">
+    <!-- <div class="container-fluid py-2">
         <div class="row text-center">
             <div class="col-md-7 text-light font-italic">
                 <p>Sign up for exclusive offers...</p>
@@ -113,7 +120,7 @@ src="https://www.google.com/maps/embed/v1/view?zoom=17&center=29.7460,-95.4613&k
                 </button>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <!-- Modal -->
 
@@ -159,12 +166,12 @@ src="https://www.google.com/maps/embed/v1/view?zoom=17&center=29.7460,-95.4613&k
 
 
     <!-- Footer -->
-
+    <hr>
     <footer class="container py-3 mr-4 ml-4">
         <p class="float-right">
             <a href="#">Back to Top</a>
         </p>
-        <p>&copy; 2020 Money's Gourmet Burgers &middot;
+        <p>&copy; <span id="year"></span> Money's Gourmet Burgers &middot;
             <a href="">Home</a> &middot;
             <a href="">Locations</a>
         </p>
@@ -175,4 +182,6 @@ src="https://www.google.com/maps/embed/v1/view?zoom=17&center=29.7460,-95.4613&k
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
   </body>
+  <script src="./jsfiles/locations.js"></script>
+  <!-- <script src="./jsfiles/app.js"></script> -->
 </html>

@@ -39,10 +39,18 @@
                         <a href="menu.html" class="nav-link">Menu</a>
                     </li>
                 </ul>
-                <form class="form-inline my-2 my-md-1">
+                <!-- <form class="form-inline my-2 my-md-1">
                     <input type="text" class="form-control mr-sm-2 " placeholder="Search">
                     <button class="btn my-2" type="submit">Search</button>
-                </form>
+                </form> -->
+                <div class="col-md-5">
+                    <button type='button' class="btn btn-success" data-toggle="modal" data-target="#modal">
+                        Sign Up Here!
+                    </button>
+                    <button type='button' class="btn btn-success" data-toggle="modal" data-target="#modal">
+                        Login Here
+                    </button>
+                </div>
             </div>
         </nav>
     </header>
@@ -98,7 +106,7 @@
             <div class="col-md-4">
                 <img class='rounded-circle' src="images/challenge.jpg" alt="eating challange image">
                 <h3 class="my-2">Challenge Yourself!</h3>
-                <p>Expand your belly with one of our famous burger eating challanges.</p>
+                <p>Enter our famous burger eating challanges.</p>
                 <p>
                     <a href="#" class="btn btn-secondary" role="button">View Details &raquo;</a>
                 </p>
@@ -114,7 +122,7 @@
         </div>
     </div>
 
-    <div class="container-fluid py-2">
+    <!-- <div class="container-fluid py-2">
         <div class="row text-center">
             <div class="col-md-7 text-light font-italic">
                 <p>Sign up for exclusive offers...</p>
@@ -125,7 +133,9 @@
                 </button>
             </div>
         </div>
-    </div>
+    </div> -->
+
+    <hr>
 
     <!-- Modal -->
 
@@ -170,11 +180,13 @@
         </div>
     </div>
 
+    <!-- Footer  -->
+    
     <footer class="container py-3 mr-4 ml-4">
         <p class="float-right">
             <a href="#">Back to Top</a>
         </p>
-        <p>&copy; 2020 Money's Gourmet Burgers &middot;
+        <p>&copy; <span id="year"></span> Money's Gourmet Burgers &middot;
             <a href="">Home</a> &middot;
             <a href="">Locations</a>
         </p>
@@ -193,5 +205,5 @@
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
     </script>
 </body>
-
+<script src="./jsfiles/app.js"></script>
 </html>
