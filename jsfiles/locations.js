@@ -1,6 +1,9 @@
 /*
   jshint esversion: 6
 */
+
+import { key } from './api.js';
+
 const locations = [
 
     {
@@ -9,7 +12,7 @@ const locations = [
         title: "Katy",
         address: '25660 Nelson Way, Katy, TX 77494',
         phone: '281-555-5555',
-        iframe: "https://www.google.com/maps/embed/v1/view?zoom=17&center=29.7744%2C-95.8206&key=AIzaSyCyiloYoV303sgisw9hhbmKEfTV2d1oXxM",
+        iframe: `https://www.google.com/maps/embed/v1/view?zoom=17&center=29.7744%2C-95.8206&key=${key}`,
     },
 
     {
@@ -18,7 +21,7 @@ const locations = [
         title: "Galleria",
         address: '1201 Lake Woodlands Dr., The Woodlands, TX 77380',
         phone: '281-555-5555',
-        iframe: "https://www.google.com/maps/embed/v1/view?zoom=17&center=30.1641%2C-95.4554&key=AIzaSyCyiloYoV303sgisw9hhbmKEfTV2d1oXxM",
+        iframe: `https://www.google.com/maps/embed/v1/view?zoom=17&center=30.1641%2C-95.4554&key=${key}`,
     },
 
     {
@@ -27,7 +30,7 @@ const locations = [
         title: "Midtown",
         address: '3511 Main St., Houston, TX 77002',
         phone: '281-555-5555',
-        iframe: "https://www.google.com/maps/embed/v1/view?zoom=17&center=29.7392,-95.3785&key=AIzaSyCyiloYoV303sgisw9hhbmKEfTV2d1oXxM",
+        iframe: `https://www.google.com/maps/embed/v1/view?zoom=17&center=29.7392,-95.3785&key=${key}`,
     },
 
     {
@@ -48,7 +51,7 @@ const locationDesc = document.querySelector('.locations');
 
 // load items
 window.addEventListener('DOMContentLoaded', function() {
-
+    
     displayLocationItems(locations);
 });
 

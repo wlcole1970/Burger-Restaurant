@@ -344,24 +344,6 @@ function displayDrinksItems(drinkItems) {
         drinksDesc.innerHTML = drinksMenu;
 }
 
-// function displayLocationItems(locationItems) {
-//     let locationsPlace = locationItems.map(function(item) {
-//         return `
-//         <img class='' src="${item.img}" alt="restaurant image">
-            
-//         <h3 class="py-3">${item.title}</h3>
-//         <p>${item.address}</p>
-//         <p>${item.phone}</p>
-//         <div>
-//             <iframe width="600" height="450" frameborder="0" style="border:0"
-// src="${item.iframe}" allowfullscreen></iframe>
-//         </div>
-//         `;
-//     });
-//     locationsPlace = locationsPlace.join('');
-//     locationDesc.innerHTML = locationsPlace;
-// }
-
 // get current year 
 
 document.getElementById("year").innerHTML = new Date().getFullYear();
